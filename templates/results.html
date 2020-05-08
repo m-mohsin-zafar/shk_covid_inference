@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Results - COVID-XRay</title>
+    <link rel="stylesheet" href="static/assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800">
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="static/assets/css/Bootstrap-Image-Uploader.css">
+    <link rel="stylesheet" href="static/assets/css/Footer-Basic.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+</head>
+
+<body>
+<section class="jumbotron">
+    <div class="container">
+        <div class="row">
+            <div id="result_section" class="shadow col-md-16 col-lg-8 text-center bg-light m-2">
+                <div class="mx-auto service-box mt-5">
+                    <h2 class="text-center">Results</h2>
+                    <hr class="my-4"/>
+                    <p class="text-center">You'll get a Class Label and Corresponding Class of your Upload</p>
+                </div>
+                <div class="container">
+                    <form class="form-horizontal">
+                        <div class="form-group row">
+                            <label for="cls_id" class="col-sm-4 control-label">Predicted Class ID</label>
+                            <div class="col-sm-8">
+                                <div class="form-control" id="cls_id"><p>{{ class_id }}</p></div>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="cate" class="col-sm-4 control-label">Predicted Category</label>
+                            <div class="col-sm-8">
+                                <div class="form-control" id="cate"><p>{{ category }}</p></div>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="pred_conf" class="col-sm-4 control-label">Prediction Confidence</label>
+                            <div class="col-sm-8">
+                                <div class="form-control" id="pred_conf"><p>{{ confi }}</p></div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+            <div class="shadow col-md-6 col-lg-3 text-center m-2">
+                <div class="mx-auto service-box mt-5"><i class="fa fa-area-chart fa-4x text-primary mb-3 sr-icons"></i>
+                    <h3 class="mb-3">Here We Go!</h3>
+                    <p class="text-muted mb-0">Let's see the output</p>
+                </div>
+            </div>
+
+        </div>
+        <div class="row m-3">
+            <div class="col-md-16 col-lg-8">
+                <a class="shadow btn btn-light btn-outline-dark btn-block" href="{{ url_for('index') }}">Go Back to Main
+                    Page!</a>
+{#                <button type="button" class="shadow btn btn-light btn-outline-dark btn-block" href="{{ url_for('index') }}">Go Back to Main#}
+{#                    Page!#}
+{#                </button>#}
+            </div>
+        </div>
+    </div>
+</section>
+<div class="footer-basic bg-light">
+    <footer>
+        <p class="copyright">Muhammad Mohsin Zafar | PR Lab | PIEAS © 2020</p>
+    </footer>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+<script src="static/assets/js/bs-init.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+<script src="static/assets/js/creative.js"></script>
+</body>
+
+</html>

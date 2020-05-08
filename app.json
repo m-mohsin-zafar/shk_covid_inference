@@ -1,0 +1,5 @@
+{
+  "name": "Corona XRay Classifier",
+  "description": "Corona Vs. Non Corona Classifier Built Using ONNXRuntime and Flask",
+  "keywords": ["python", "flask", "pytorch", "covid19", "corona"]
+}

@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+        <title>Home - COVID-XRay</title>
+        <link rel="stylesheet" href="static/assets/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet"
+              href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800">
+        <link rel="stylesheet"
+              href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="static/assets/css/Bootstrap-Image-Uploader.css">
+        <link rel="stylesheet" href="static/assets/css/Footer-Basic.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+    </head>
+
+    <body id="page-top">
+    <nav class="navbar navbar-light navbar-expand-lg fixed-top" id="mainNav">
+        <div class="container"><a class="navbar-brand js-scroll-trigger" href="#page-top"><img
+                src="static/assets/img/PRLab_logo.png" width="80" height="80" alt="PR LAB"></a>
+            <button data-toggle="collapse" data-target="#navbarResponsive" class="navbar-toggler navbar-toggler-right"
+                    type="button"
+                    aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><i
+                    class="fa fa-align-justify"></i></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="nav navbar-nav ml-auto">
+                    <li class="nav-item" role="presentation"><a class="nav-link btn btn-success js-scroll-trigger mr-2"
+                                                                href="#about">About</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link btn btn-success js-scroll-trigger mr-2"
+                                                                href="#services">GET PREDICTIONS</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link btn btn-success js-scroll-trigger mr-2"
+                                                                href="#portfolio">Reports</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link btn btn-success js-scroll-trigger mr-2"
+                                                                href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header class="masthead text-center text-white d-flex"
+            style="background-image: url(&quot;static/assets/img/header_corona.jpg&quot;);">
+        <div class="container my-auto">
+            <div class="row">
+                <div class="col-lg-10 mx-auto">
+                    <h1 class="text-uppercase"><strong>COVID'19 XRAY IMAGE CLASSIFIER</strong></h1>
+                    <hr>
+                </div>
+            </div>
+            <div class="col-lg-8 mx-auto">
+                <p class="text-faded mb-5">Online App accomodating implementation of,&nbsp; "Coronavirus Disease Analysis
+                    using Chest X-ray Images and a Novel Deep Convolutional Neural Network, (Khan H. S. et al, 20)"</p><a
+                    class="btn btn-primary btn-xl js-scroll-trigger" role="button"
+                    href="#services">Find Out More</a></div>
+        </div>
+    </header>
+    <section id="about" class="bg-primary">
+        <div class="container">
+            <div class="row">
+                <div class="col offset-lg-8 mx-auto text-center">
+                    <h2 class="text-white section-heading">Introducing a Web Predictor of Our Work</h2>
+                    <hr class="light my-4">
+                    <p class="text-faded mb-4">The proposed method exploits the learning capability of CNNs to discriminate
+                        COVID'19 patient X-ray patients from those of healthy patient X-rays.&nbsp; Classification is
+                        performed by proposition of a novel CNN based Architecture "CvoidRENet".
+                        Also, results have been benchmarked against VGG-16 Architecture by fine tuning its last layer to a
+                        binary classfication problem.&nbsp;</p><a class="btn btn-light btn-xl js-scroll-trigger"
+                                                                  role="button" href="#services">Get PREDICTIONS!</a></div>
+            </div>
+        </div>
+    </section>
+    <section id="services">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Let's get Predictions!</h2>
+                    <hr class="my-4">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-lg-3 text-center">
+                    <div class="mx-auto service-box mt-5"><i class="fa fa-cubes fa-4x text-primary mb-3 sr-icons"></i>
+                        <h3 class="mb-3">Covid RENet Model</h3>
+                        <p class="text-muted mb-0">Get predictions by uploading Chest X-Ray Image</p>
+                    </div>
+                </div>
+                <div class="col-md-18 col-lg-9 text-center bg-light bg-gradient-light">
+                    <div class="mt-5 pt-3 pb-3 w-100">
+                        <header class="text-dark text-center">
+                            <h4><i class="fa fa-image fa-2x text-primary mr-3 sr-icons"></i>Upload Image Here</h4>
+                            <hr class="my-4"/>
+                        </header>
+                        <form method="post" enctype="multipart/form-data">
+                            <!-- Upload image input-->
+                            <div class="input-group mb-3 px-2 py-2 rounded-pill bg-white shadow-sm">
+
+                                <input id="upload" type="file" name="file" class="form-control border-0">
+                                <label id="upload-label" for="upload" class="font-weight-light text-muted">Choose
+                                    file</label>
+                                <div class="input-group-append">
+                                    <label for="upload" class="btn btn-light m-0 rounded-pill px-4"> <i
+                                            class="fa fa-cloud-upload mr-2 text-muted"></i>
+                                        <small class="text-uppercase font-weight-bold text-muted">Choose file</small>
+                                    </label>
+                                </div>
+
+                            </div>
+
+                            <div class="row justify-content-center mb-4">
+                                <input class="btn btn-primary" type="submit" value="UPLOAD">
+                            </div>
+
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="portfolio" class="p-0 bg-light">
+        <div class="container-fluid p-0">
+            <div class="row no-gutters popup-gallery">
+                <div class="col-sm-6 col-lg-4"><a class="portfolio-box" href="static/assets/img/fullsize/1.jpg"><img
+                        class="img-fluid" src="static/assets/img/thumbnails/1.jpg">
+                    <div class="portfolio-box-caption">
+                        <div class="portfolio-box-caption-content">
+                            <div class="project-category text-faded"><span>Model</span></div>
+                            <div class="project-name"><span>TL Based High Level Depiction</span></div>
+                        </div>
+                    </div>
+                </a></div>
+                <div
+                        class="col-sm-6 col-lg-4"><a class="portfolio-box" href="static/assets/img/fullsize/2.jpg"><img
+                        class="img-fluid" src="static/assets/img/thumbnails/2.jpg">
+                    <div class="portfolio-box-caption">
+                        <div class="portfolio-box-caption-content">
+                            <div class="project-category text-faded"><span>Visualization</span></div>
+                            <div class="project-name"><span>PCA</span></div>
+                        </div>
+                    </div>
+                </a></div>
+                <div
+                        class="col-sm-6 col-lg-4"><a class="portfolio-box" href="static/assets/img/fullsize/3.jpg"><img
+                        class="img-fluid" src="static/assets/img/thumbnails/3.jpg">
+                    <div class="portfolio-box-caption">
+                        <div class="portfolio-box-caption-content">
+                            <div class="project-category text-faded"><span>METRICS</span></div>
+                            <div class="project-name"><span>From Scratch Training</span></div>
+                        </div>
+                    </div>
+                </a></div>
+                <div
+                        class="col-sm-6 col-lg-4"><a class="portfolio-box" href="static/assets/img/fullsize/4.jpg"><img
+                        class="img-fluid" src="static/assets/img/thumbnails/4.jpg">
+                    <div class="portfolio-box-caption">
+                        <div class="portfolio-box-caption-content">
+                            <div class="project-category text-faded"><span>Metrics</span></div>
+                            <div class="project-name"><span>TL Based Training</span></div>
+                        </div>
+                    </div>
+                </a></div>
+                <div
+                        class="col-sm-6 col-lg-4"><a class="portfolio-box" href="static/assets/img/fullsize/5.jpg"><img
+                        class="img-fluid" src="static/assets/img/thumbnails/5.jpg">
+                    <div class="portfolio-box-caption">
+                        <div class="portfolio-box-caption-content">
+                            <div class="project-category text-faded"><span>Architecture</span></div>
+                            <div class="project-name"><span>Covid RENet</span></div>
+                        </div>
+                    </div>
+                </a></div>
+                <div
+                        class="col-sm-6 col-lg-4"><a class="portfolio-box" href="static/assets/img/fullsize/6.jpg"><img
+                        class="img-fluid" src="static/assets/img/thumbnails/6.jpg">
+                    <div class="portfolio-box-caption">
+                        <div class="portfolio-box-caption-content">
+                            <div class="project-category text-faded"><span>Architecture</span></div>
+                            <div class="project-name"><span>Custom VGG16</span></div>
+                        </div>
+                    </div>
+                </a></div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-dark text-white">
+        <div class="container text-center">
+            <img class="w-25 h-25" src="static/assets/img/thumbnails/pytorch-logo.png"/>
+            <h4 class="mb-4">Developed Using PyTorch</h4>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h2 class="section-heading">For Queries &amp; Issues</h2>
+                    <hr class="my-4">
+                    <p class="mb-5">You may contact at following Email or visit our Github Repository, We'll be happy to
+                        address issue and provide quality research output.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 ml-auto text-center"><i class="fa fa-github fa-3x mb-3 sr-contact"></i>
+                    <p><a href=https://github.com/m-mohsin-zafar/shk_covid_pytorch">GitHub Repository</a></p></div>
+                <div class="col-lg-4 mr-auto text-center"><i class="fa fa-envelope-o fa-3x mb-3 sr-contact"
+                                                             data-aos="zoom-in" data-aos-duration="300" data-aos-delay="300"
+                                                             data-aos-once="true"></i>
+                    <p><a href="mailto:asif@pieas.edu.pk">Dr. Asifullah Khan</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="footer-basic bg-light">
+        <footer>
+            <ul class="list-inline">
+                <li class="list-inline-item"><a href="#">Home</a></li>
+                <li class="list-inline-item"><a href="#about">About</a></li>
+                <li class="list-inline-item"><a href="#services">Get Predictions</a></li>
+                <li class="list-inline-item"><a href="#portfolio">Reports</a></li>
+                <li class="list-inline-item"><a href="#contact">Contact</a></li>
+            </ul>
+            <p class="copyright">Muhammad Mohsin Zafar | PR Lab | PIEAS © 2020</p>
+        </footer>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="static/assets/js/bs-init.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+    <script src="static/assets/js/creative.js"></script>
+    <script src="/static/assets/js/Bootstrap-Image-Uploader.js"></script>
+    </body>
+
+</html>
