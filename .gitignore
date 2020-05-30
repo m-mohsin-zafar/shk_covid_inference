@@ -1,9 +1,4 @@
 __pycache__/app.cpython-36.pyc
-.idea/vcs.xml
-.idea/shk_model_inference.iml
-.idea/modules.xml
-.idea/misc.xml
-.idea/inspectionProfiles/profiles_settings.xml
-.idea/inspectionProfiles/Project_Default.xml
-.idea/.gitignore
-.idea/$CACHE_FILE$
+.idea/
+__pycache__/
+
